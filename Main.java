@@ -1,23 +1,24 @@
-import java.util.*;
- 
-class Main
+import java.util.Scanner;
+
+public class Main
 {
-    public static void main(String []s)
+    public static void main(String args[])
     {
-        int num;
-        //Scanner class to read value
-        Scanner sc=new Scanner(System.in);
-         
-        
-        num=sc.nextInt();
-         
-        //check condition for +ve, -ve and Zero
-        if(num>0)
-            System.out.println( " POSITIVE");
-        else if(num<0)
-            System.out.println(" NEGATIVE ");
+        char ch;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("");
+        ch = scan.next().charAt(0);
+		
+        if(ch=='a' || ch=='A' || ch=='e' || ch=='E' ||
+        ch=='i' || ch=='I' || ch=='o' || ch=='O' ||
+        ch=='u' || ch=='U')
+        {
+            System.out.print(" Vowel");
+        }
         else
-            System.out.println("ZERO");
-         
+        {
+            System.out.print("consonant");
+        }
     }
 }
